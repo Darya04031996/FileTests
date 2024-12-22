@@ -1,0 +1,30 @@
+plugins {
+    id 'java-library'
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+}
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.1'
+    testImplementation 'org.assertj:assertj-core:3.24.2'
+    testImplementation 'com.opencsv:opencsv:5.8'
+    testImplementation 'com.codeborne:pdf-test:1.5.0'
+    testImplementation 'com.codeborne:xls-test:1.4.3'
+    testImplementation 'com.fasterxml.jackson.core:jackson-core:2.16.0'
+    testImplementation 'com.fasterxml.jackson.core:jackson-databind:2.16.0'
+    testImplementation 'com.fasterxml.jackson.core:jackson-annotations:2.16.0'
+}
+
+
+test {
+    useJUnitPlatform()
+}
