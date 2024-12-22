@@ -2,20 +2,13 @@ package model;
 
 import java.util.List;
 
+
 public class JsonFile {
     private String name;
-    private int age;
+    private String age;
     private List<String> hobbies;
 
-    public Person() {
-    }
-
-    public Person(String name, int age, List<String> hobbies) {
-        this.name = name;
-        this.age = age;
-        this.hobbies = hobbies;
-    }
-
+    // Getters and Setters
     public String getName() {
         return name;
     }
@@ -24,11 +17,11 @@ public class JsonFile {
         this.name = name;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
@@ -40,3 +33,4 @@ public class JsonFile {
         this.hobbies = hobbies;
     }
 }
+
